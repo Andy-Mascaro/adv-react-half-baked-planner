@@ -1,3 +1,4 @@
+import Entry from '../Planner/EntryItem';
 import styles from './Header.css';
 
 export default function Header() {
@@ -5,7 +6,7 @@ export default function Header() {
     <header className={styles.header}>
       <h2>My Planner</h2>
       {/* TODO: Replace hard-coded count with the actual number of entries */}
-      <span>1 Item Left</span>
+      <span>Number of items in planner:{Entry.length}</span>
     </header>
   );
 }
